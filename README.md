@@ -20,6 +20,9 @@ https://pan.miaostars.com/s/DgQuy
 2.  前往[官机互刷插件绑定器](http://zj.g18c.cn:11111/)完成绑定
 3.  重启云崽
 
+#### 支持
+
+目前支持NapCat.Onebot，Lagrange.Onebot，icqq-plugin
 
 #### 参与贡献
 
