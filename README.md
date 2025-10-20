@@ -19,6 +19,7 @@ https://pan.miaostars.com/s/DgQuy
 ```
 2.  前往[官机互刷插件绑定器](http://zj.g18c.cn:11111/)完成绑定
 3.  重启云崽
+4.  可配合[蛙蛙插件](https://github.com/wozhendefuleaaa/wawa-plugin)使用
 
 #### 支持
 
