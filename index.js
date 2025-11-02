@@ -3,6 +3,8 @@ import path from 'path';
 import protobuf from "./node_modules/protobufjs/minimal.js"
 import { Buffer } from 'buffer'
 import fetch from "node-fetch"
+import chalk from 'chalk'
+
 
 const { Writer, Reader } = protobuf
 
@@ -10,6 +12,33 @@ const { Writer, Reader } = protobuf
 const EXECUTION_RECORD_PATH = path.join(process.cwd(), 'ccc_execution_record_2.json');
 const INTERVAL_12_HOURS = 12 * 60 * 60 * 1000; // 12小时
 const INTERVAL_10_MINUTES = 10 * 60 * 1000; // 10分钟
+let ret = []
+logger.info(chalk.rgb(236, 92, 62)(`---------=.=---------`))
+logger.info(chalk.rgb(56, 153, 228)(`互刷插件载入中`))
+logger.info(chalk.rgb(35, 196, 116)(`作者：ZY&蛙蛙`))
+logger.info(chalk.rgb(236, 92, 62)(`---------=.=---------`))
+const appsDir = './plugins/WW-ccc-plugin/apps'
+const files = fs
+  .readdirSync(appsDir)
+  .filter((file) => file.endsWith('.js'))
+
+files.forEach((file) => {
+  ret.push(import(`./apps/${file}`))
+})
+
+ret = await Promise.allSettled(ret)
+
+let apps = {}
+for (let i in files) {
+  let name = files[i].replace('.js', '')
+  if (ret[i].status != 'fulfilled') {
+    logger.error(`载入插件错误：${logger.red(name)}`)
+    logger.error(ret[i].reason)
+    continue
+  }
+  apps[name] = ret[i].value[Object.keys(ret[i].value)[0]]
+}
+export { apps }
 
 class Protobuf {
   constructor() {}
