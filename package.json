@@ -1,0 +1,30 @@
+{
+  "name": "yunzai-qqbot-brushing",
+  "version": "1.0",
+  "description": "TRSS-Yunzai互刷插件",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/wozhendefuleaaa/yunzai-qqbot-brushing"
+  },
+  "keywords": [
+    "Yunzai-Bot",
+    "TRSS-Yunzai"
+  ],
+  "author": "蛙蛙",
+  "license": "MIT",
+  "dependencies": {
+    "archiver": "^5.3.2",
+    "canvas": "^2.11.2",
+    "cos-nodejs-sdk-v5": "^2.12.10",
+    "fluent-ffmpeg": "^2.1.2",
+    "handlebars": "*",
+    "image-size": "^1.0.2",
+    "mysql2": "^3.9.7",
+    "yaml": "^2.3.4"
+  }
+}
