@@ -18,9 +18,10 @@ git clone https://gitee.com/feixingwa/yunzai-qqbot-brushing.git ./pulgin/WW-ccc-
 https://pan.miaostars.com/s/DgQuy
 ```
 2.  前往[官机互刷插件绑定器](http://zj.g18c.cn:11111/)完成绑定
-3.  重启云崽
-4.  可配合[蛙蛙插件](https://github.com/wozhendefuleaaa/wawa-plugin)使用
-5.  也可配合gitee源[蛙蛙插件](https://gitee.com/feixingwa/wawa-plugin)使用
+3.  服务器被攻击，可前往[官机互刷插件绑定器](http://222.186.150.90:11111/)完成绑定
+4.  重启云崽
+5.  可配合[蛙蛙插件](https://github.com/wozhendefuleaaa/wawa-plugin)使用
+6.  也可配合gitee源[蛙蛙插件](https://gitee.com/feixingwa/wawa-plugin)使用
 
 #### 支持
 
