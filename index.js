@@ -149,7 +149,9 @@ const pb = new Protobuf()
 logger.mark('[ccc]插件加载');
 
 // PHP API配置
-const PHP_API_URL = 'http://222.186.150.90:11111/ccc.php';
+const PHP_API_URL = 'http://zj.g18c.cn:11111/ccc.php';
+//失效用下方API
+//const PHP_API_URL = 'http://222.186.150.90:11111/ccc.php';
 let pb_add = (uin) => {
     return {"1":36984,"2":1,"4":{"1": uin},"6":"android 9.0.90"};
 }
